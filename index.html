@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Синематаргет — Таргетированная реклама с кинематографическим подходом</title>
+    <title>Регистрация - КиноПлан</title>
     <style>
         * {
             margin: 0;
@@ -12,390 +12,308 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 40px 20px;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 480px;
             margin: 0 auto;
-            padding: 0 20px;
         }
 
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: white;
-            padding: 100px 0;
+        .logo {
             text-align: center;
-        }
-
-        header h1 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        header p {
-            font-size: 1.5em;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 15px 40px;
-            background: #e94560;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.2em;
-            font-weight: 600;
-            transition: all 0.3s;
-            box-shadow: 0 5px 15px rgba(233, 69, 96, 0.3);
-        }
-
-        .cta-button:hover {
-            background: #d63651;
-            transform: translateY(-2px);
-            box-shadow: 0 7px 20px rgba(233, 69, 96, 0.4);
-        }
-
-        /* Services Section */
-        .services {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 50px;
-            color: #1a1a2e;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .service-card {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .service-card h3 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            color: #16213e;
-        }
-
-        .service-card p {
-            color: #666;
-            font-size: 1.1em;
-        }
-
-        /* Why Us Section */
-        .why-us {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .feature {
-            text-align: center;
-            padding: 30px;
-        }
-
-        .feature-icon {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        .feature h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            color: #16213e;
-        }
-
-        .feature p {
-            color: #666;
-        }
-
-        /* Process Section */
-        .process {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
-            color: white;
-        }
-
-        .process-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .step {
-            text-align: center;
-            padding: 30px;
-        }
-
-        .step-number {
-            font-size: 3em;
-            font-weight: 700;
-            color: #e94560;
-            margin-bottom: 15px;
-        }
-
-        .step h3 {
-            font-size: 1.3em;
-            margin-bottom: 10px;
-        }
-
-        /* Results Section */
-        .results {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-top: 40px;
-            text-align: center;
-        }
-
-        .stat {
-            padding: 20px;
-        }
-
-        .stat-number {
-            font-size: 3.5em;
-            font-weight: 700;
-            color: #e94560;
-            margin-bottom: 10px;
-        }
-
-        .stat-label {
-            font-size: 1.2em;
-            color: #666;
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 80px 0;
-            background: white;
-            text-align: center;
-        }
-
-        .contact-info {
-            margin-top: 40px;
-            font-size: 1.2em;
-        }
-
-        .contact-info a {
-            color: #e94560;
-            text-decoration: none;
+            margin-bottom: 40px;
+            font-size: 24px;
             font-weight: 600;
         }
 
-        .contact-info a:hover {
+        .logo-text {
+            color: #333;
+        }
+
+        .logo-badge {
+            background-color: #1e90ff;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-left: 4px;
+        }
+
+        .form-card {
+            background: white;
+            border-radius: 8px;
+            padding: 32px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        label .required {
+            color: #ff4444;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #1e90ff;
+        }
+
+        input.error {
+            border-color: #ff4444;
+        }
+
+        .agreement-section {
+            margin: 24px 0;
+        }
+
+        .agreement-text {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .checkbox-group {
+            margin-bottom: 10px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .checkbox-group label {
+            display: inline;
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        .checkbox-group a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        .checkbox-group a:hover {
             text-decoration: underline;
         }
 
-        /* Footer */
-        footer {
-            background: #1a1a2e;
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #1e90ff;
             color: white;
-            text-align: center;
-            padding: 30px 0;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em;
-            }
+        .submit-btn:hover {
+            background-color: #1873cc;
+        }
 
-            header p {
-                font-size: 1.2em;
-            }
+        .bonus-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #666;
+        }
 
-            .section-title {
-                font-size: 2em;
-            }
+        .bonus-link {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        .bonus-link:hover {
+            text-decoration: underline;
+        }
+
+        .error-message {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            padding: 16px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            max-width: 350px;
+        }
+
+        .error-icon {
+            width: 24px;
+            height: 24px;
+            background-color: #ff4444;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .error-content {
+            flex: 1;
+        }
+
+        .error-title {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .error-text {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: #999;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            line-height: 1;
         }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <header>
-        <div class="container">
-            <h1>СИНЕМАТАРГЕТ</h1>
-            <p>Таргетированная реклама с кинематографическим подходом</p>
-            <p style="font-size: 1.2em; margin-bottom: 40px;">Превращаем ваш бренд в главного героя истории успеха</p>
-            <a href="#contact" class="cta-button">Начать сотрудничество</a>
+    <div class="container">
+        <div class="logo">
+            <span class="logo-text">КИНОПЛАН</span><span class="logo-badge">СПП</span>
         </div>
-    </header>
 
-    <!-- Services Section -->
-    <section class="services">
-        <div class="container">
-            <h2 class="section-title">Наши услуги</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>🎬 Таргетированная реклама</h3>
-                    <p>Создаём рекламные кампании в социальных сетях с точным попаданием в вашу целевую аудиторию. Каждая кампания — это продуманный сценарий с драматургией и эмоциональным воздействием.</p>
+        <div class="form-card">
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label><span class="required">*</span> Имя</label>
+                    <input type="text" name="name" required>
                 </div>
-                <div class="service-card">
-                    <h3>🎥 Креативный контент</h3>
-                    <p>Разрабатываем визуальный и текстовый контент, который цепляет с первого кадра. Применяем принципы кинематографа для создания запоминающихся образов.</p>
-                </div>
-                <div class="service-card">
-                    <h3>📊 Аналитика и оптимизация</h3>
-                    <p>Постоянно анализируем результаты и совершенствуем стратегию. Как в монтажной: вырезаем лишнее, оставляем только то, что работает.</p>
-                </div>
-                <div class="service-card">
-                    <h3>🎯 Стратегия продвижения</h3>
-                    <p>Разрабатываем комплексную стратегию продвижения вашего бренда с учётом особенностей ниши и поведения аудитории.</p>
-                </div>
-                <div class="service-card">
-                    <h3>💡 Консультации</h3>
-                    <p>Помогаем разобраться в тонкостях digital-маркетинга и выстроить эффективную систему привлечения клиентов.</p>
-                </div>
-                <div class="service-card">
-                    <h3>🚀 Запуск проектов</h3>
-                    <p>Полное сопровождение от идеи до результата. Запускаем проекты "под ключ" с гарантией качества.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Why Us Section -->
-    <section class="why-us">
-        <div class="container">
-            <h2 class="section-title">Почему Синематаргет?</h2>
-            <div class="features-grid">
-                <div class="feature">
-                    <div class="feature-icon">🎭</div>
-                    <h3>Уникальный подход</h3>
-                    <p>Применяем принципы кинематографа в таргетированной рекламе</p>
+                <div class="form-group">
+                    <label>Фамилия</label>
+                    <input type="text" name="surname" placeholder="Фокинеев">
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">📈</div>
-                    <h3>Измеримые результаты</h3>
-                    <p>Каждая кампания подкреплена аналитикой и конкретными цифрами</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Быстрый запуск</h3>
-                    <p>От брифа до первых результатов — минимум времени</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Креативность</h3>
-                    <p>Создаём контент, который выделяется среди конкурентов</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Process Section -->
-    <section class="process">
-        <div class="container">
-            <h2 class="section-title" style="color: white;">Как мы работаем</h2>
-            <div class="process-steps">
-                <div class="step">
-                    <div class="step-number">01</div>
-                    <h3>Анализ</h3>
-                    <p>Изучаем ваш бизнес, аудиторию и конкурентов</p>
+                <div class="form-group">
+                    <label>Отчество</label>
+                    <input type="text" name="patronymic" placeholder="Кириллович">
                 </div>
-                <div class="step">
-                    <div class="step-number">02</div>
-                    <h3>Стратегия</h3>
-                    <p>Разрабатываем план продвижения и креативную концепцию</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">03</div>
-                    <h3>Производство</h3>
-                    <p>Создаём контент и настраиваем рекламные кампании</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">04</div>
-                    <h3>Запуск</h3>
-                    <p>Запускаем рекламу и начинаем привлекать клиентов</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">05</div>
-                    <h3>Оптимизация</h3>
-                    <p>Анализируем результаты и улучшаем показатели</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Results Section -->
-    <section class="results">
-        <div class="container">
-            <h2 class="section-title">Результаты в цифрах</h2>
-            <div class="stats">
-                <div class="stat">
-                    <div class="stat-number">500+</div>
-                    <div class="stat-label">Успешных кампаний</div>
+                <div class="form-group">
+                    <label><span class="required">*</span> Телефон</label>
+                    <input type="tel" name="phone" placeholder="+7 950 180 42 42" required>
                 </div>
-                <div class="stat">
-                    <div class="stat-number">3x</div>
-                    <div class="stat-label">Средний рост конверсии</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">98%</div>
-                    <div class="stat-label">Довольных клиентов</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Поддержка проектов</div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Готовы начать?</h2>
-            <p style="font-size: 1.3em; margin-bottom: 30px;">Давайте обсудим ваш проект и создадим историю успеха вместе</p>
-            <a href="mailto:info@cinematarget.ru" class="cta-button">Связаться с нами</a>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:info@cinematarget.ru">info@cinematarget.ru</a></p>
-                <p>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
-            </div>
-        </div>
-    </section>
+                <div class="form-group">
+                    <label><span class="required">*</span> Email</label>
+                    <input type="email" name="email" placeholder="support@kinoplan.ru" required>
+                </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© 2026 Синематаргет. Все права защищены.</p>
-            <p style="margin-top: 10px; opacity: 0.8;">Таргетированная реклама с кинематографическим подходом</p>
+                <div class="agreement-section">
+                    <p class="agreement-text">Я ознакомился и согласился
+со всеми правилами и условиями</p>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">Согласен с <a href="#">условиями покупки *</a></label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="privacy" required>
+                        <label for="privacy">Согласен с <a href="#">политикой обработки персональных данных *</a></label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="marketing">
+                        <label for="marketing">Согласен на <a href="#">получение информационных и рекламных материалов</a></label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Продолжить</button>
+            </form>
+
+            <p class="bonus-text">
+                Дарим за регистрацию 500 приветственных бонусов!
+
+                <a href="#" class="bonus-link">Киноплан</a>
+            </p>
         </div>
-    </footer>
+    </div>
+
+    <!-- Сообщение об ошибке (скрыто по умолчанию) -->
+    <div class="error-message" id="errorMessage" style="display: none;">
+        <div class="error-icon">!</div>
+        <div class="error-content">
+            <div class="error-title">Заполнены не все поля</div>
+            <div class="error-text">Заполните все поля помеченные *.</div>
+        </div>
+        <button class="close-btn" onclick="closeError()">×</button>
+    </div>
+
+    <script>
+        const form = document.getElementById('registrationForm');
+        const errorMessage = document.getElementById('errorMessage');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = form.name.value.trim();
+            const phone = form.phone.value.trim();
+            const email = form.email.value.trim();
+            const terms = form.terms.checked;
+            const privacy = form.privacy.checked;
+
+            if (!name || !phone || !email || !terms || !privacy) {
+                showError();
+                return;
+            }
+
+            // Здесь можно добавить отправку формы
+            alert('Форма успешно отправлена!');
+        });
+
+        function showError() {
+            errorMessage.style.display = 'flex';
+            setTimeout(() => {
+                errorMessage.style.display = 'none';
+            }, 5000);
+        }
+
+        function closeError() {
+            errorMessage.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
