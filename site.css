@@ -124,7 +124,7 @@ footer .reqs, footer .copy { font-size: 14px; line-height: 22px; }
   margin: 16px 0;
 }
 .reqs p { margin: 0; }
-.reqs .copy { color: #fff; }
+footer .copy { color: #fff; margin: 0; padding-bottom: 0; }
 .copy { display: flex; gap: 16px; padding-bottom: 40px; }
 .copy a { color: var(--muted); text-decoration: none; }
 .copy a:hover { color: #fff; }
