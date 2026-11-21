@@ -1,6 +1,6 @@
 :root {
   color-scheme: dark;
-  --blue: #0077ff;
+  --blue: #0062fb;
   --bg: #070b14;
   --footer: #131212;
   --muted: #c1c1c1;
@@ -10,7 +10,7 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; }
 body {
-  font-family: "Inter Tight", "Onest", sans-serif;
+  font-family: "Onest", sans-serif;
   background: var(--bg);
   color: #fff;
 }
@@ -63,17 +63,25 @@ h1 {
   font-size: 18px;
   line-height: 28px;
 }
-.button {
+.button, .cookie button {
   display: inline-flex;
-  margin-top: 40px;
-  padding: 16px 24px;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 8px;
   background: var(--blue);
   color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
   text-decoration: none;
-  font-size: 16px;
-  line-height: 24px;
+  cursor: pointer;
 }
-.button:hover { background: #0068e0; }
+.button { margin-top: 40px; }
+.button:hover, .cookie button:hover { background: rgb(0 98 251 / 80%); }
 
 .cookie, footer { background: var(--footer); }
 .cookie-inner, footer .wrap {
@@ -87,14 +95,6 @@ h1 {
 .cookie p, .reqs, .copy, .doc p { color: var(--muted); font-size: 12px; line-height: 20px; }
 .cookie a, .docs a { color: var(--blue); text-decoration: none; }
 .cookie a:hover, .docs a:hover { text-decoration: underline; }
-.cookie button {
-  border: 0;
-  background: var(--blue);
-  color: #fff;
-  padding: 8px 16px;
-  font: inherit;
-  cursor: pointer;
-}
 .docs { display: flex; flex-wrap: wrap; gap: 8px 16px; padding-top: 40px; }
 .reqs {
   display: grid;
