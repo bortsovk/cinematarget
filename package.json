@@ -2,7 +2,7 @@
   "name": "cinematarget",
   "private": true,
   "scripts": {
-    "build": "mkdir -p dist && cp index.html site.css color-bends.js logo.svg favicon.png dist/ && cp -r legal dist/legal",
+    "build": "mkdir -p dist && cp index.html site.css color-bends.js logo.svg favicon.png dist/ && cp -r legal dist/legal && cp -r details dist/details",
     "start": "node server.js"
   }
 }
