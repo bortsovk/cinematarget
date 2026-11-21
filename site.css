@@ -123,6 +123,8 @@ footer .reqs, footer .copy { font-size: 14px; line-height: 22px; }
   gap: 4px;
   margin: 16px 0;
 }
+.reqs p { margin: 0; }
+.reqs .copy { color: #fff; }
 .copy { display: flex; gap: 16px; padding-bottom: 40px; }
 .copy a { color: var(--muted); text-decoration: none; }
 .copy a:hover { color: #fff; }
